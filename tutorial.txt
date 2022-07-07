@@ -1,0 +1,14 @@
+sudo apt install dropbear stunnel cmake make gcc build-essential
+
+### DROPBEAR
+https://raw.githubusercontent.com/mrbogel/cloudfront/main/dropbear
+
+### STUNNEL
+openssl genrsa -out key.pem 2048
+openssl req -new -x509 -key key.pem -out cert.pem -days 1095
+cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
+https://raw.githubusercontent.com/mrbogel/cloudfront/main/stunnel.conf
+
+### Cloudfront
+https://raw.githubusercontent.com/mrbogel/cloudfront/main/nodews1.service
+https://raw.githubusercontent.com/mrbogel/cloudfront/main/proxy3.js
