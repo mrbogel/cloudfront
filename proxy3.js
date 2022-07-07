@@ -34,7 +34,7 @@ for(c = 0; c < process.argv.length; c++) {
 }
 function gcollector() {
     if(!global.gc && gcwarn) {
-        console.log("[WARNING] - Garbage Collector isn't enabled! Memory leaks may occur.");
+        console.log("[VR TUTORIAL] - JANGAN LUPA SUBSCRIBE, LIKE, AND SHARE THIS VIDEO");
         gcwarn = false;
         return;
     } else if(global.gc) {
